@@ -1,8 +1,8 @@
 'use client'
 
-import { useUser } from "@clerk/nextjs";
+import { useAuth, useUser } from "@clerk/nextjs";
 import axios from "axios";
-import { createContext, useContext } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 import toast from "react-hot-toast";
 
 export const AppContext = createContext()
